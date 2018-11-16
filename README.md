@@ -132,7 +132,7 @@ docker run -d -p 3000:3000 grafana/grafana
 # 模板位置: conf/grafana_conf/node_exporter_monitor_templates.json
 ```
 
-##### 2. 数据可视化效果图:
+##### 2. 监控数据可视化效果图:
 ![](https://github.com/guomaoqiu/prometheus_notes/blob/master/screenshots/monitor_dashboard.png?raw=true)
 
 
