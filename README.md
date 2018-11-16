@@ -119,9 +119,9 @@ Prometheus Server 提供了简易的 WebUI 可以进数据查询并展示，它�
 
 #### 报警效果图:
 ###### 微信:
-![-w300](https://github.com/guomaoqiu/prometheus_notes/blob/master/screenshots/wechat_alert.jpg)
+![-w300](https://github.com/guomaoqiu/prometheus_notes/blob/master/screenshots/wechat_alert.jpg?raw=true)
 ###### 邮件:
-![](https://github.com/guomaoqiu/prometheus_notes/blob/master/screenshots/email_alert.png)
+![](https://github.com/guomaoqiu/prometheus_notes/blob/master/screenshots/email_alert.png?raw=true)
 ### 四、可视化
 ##### 0.安装grafana(docker)
 ```
@@ -133,6 +133,6 @@ docker run -d -p 3000:3000 grafana/grafana
 ```
 
 ##### 2. 数据可视化效果图:
-![](https://github.com/guomaoqiu/prometheus_notes/blob/master/screenshots/monitor_dashboard.png)
+![](https://github.com/guomaoqiu/prometheus_notes/blob/master/screenshots/monitor_dashboard.png?raw=true)
 
 
