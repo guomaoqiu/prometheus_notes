@@ -18,7 +18,7 @@ receivers:
     - corp_id: 'wx255c88c864c39f94'
       to_party: '1'
       agent_id: '1'
-      api_secret: '微信公众号密钥'
+      api_secret: '微信企业号密钥'
 
   - name: "email_alert"
     email_configs:
