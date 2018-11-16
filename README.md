@@ -117,4 +117,22 @@ Prometheus Server 提供了简易的 WebUI 可以进数据查询并展示，它�
 
 关于各项指标的规则还需要通过编写rule条目来实现；这里简单实现了wechat跟email的报警配置，具体可看规则配置文件`conf/prometheus_server_conf/prometheus/rules/hoststas-alert.rules`以及报警触发配置文件`conf/alertmanager_conf/alertmanager.yml`；
 
+#### 报警效果图:
+###### 微信:
+![](https://github.com/guomaoqiu/prometheus_notes/blob/master/screenshots/wechat_alert.jpg)
+###### 邮件:
+![](https://github.com/guomaoqiu/prometheus_nodes/blob/master/screenshots/email_alert.jpg)
+### 四、可视化
+##### 0.安装grafana(docker)
+```
+docker run -d -p 3000:3000 grafana/grafana
+```
+##### 1.访问配置导入node_exporter dashaboard模板
+```
+# 模板位置: conf/grafana_conf/node_exporter_monitor_templates.json
+```
+
+###### 2. 数据可视化效果图:
+![](https://github.com/guomaoqiu/prometheus_nodes/blob/master/screenshots/monitor_dashboard.png)
+
 
