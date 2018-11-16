@@ -1,6 +1,6 @@
 # Prometheus
 
-## Server端安装 prometheus / alertmanager / node_expoter
+## Server端安装 prometheus / alertmanager / node_expoter / grafana
 ### 一、安装prometheus server
 ##### 0.获取软件包(略)、解压复制二进制文件
 ```
