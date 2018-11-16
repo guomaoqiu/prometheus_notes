@@ -1,0 +1,41 @@
+global:
+  resolve_timeout: 5m
+  smtp_smarthost: 'smtp.qq.com:587'
+  smtp_from: '2399447849@qq.com'
+  smtp_auth_username: '2399447849@qq.com'
+  smtp_auth_password: ''
+
+route:
+  receiver: 'wechat'
+  group_by: ['alertname','alert_type']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1h
+  #receiver: 'wechat'
+
+  routes:
+  - receiver: 'wechat'
+    match:
+      alert_type: cpu
+  - receiver: 'email_alert'
+    match:
+      alert_type: cpu
+
+receivers:
+  - name: 'wechat'
+    wechat_configs:
+    - corp_id: 'wx255c88c864c39f94'
+      to_party: '1'
+      agent_id: '1'
+      api_secret: ''
+
+  - name: "email_alert"
+    email_configs:
+    - to: '2399447849@qq.com'
+
+inhibit_rules:
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'dev', 'instance']
