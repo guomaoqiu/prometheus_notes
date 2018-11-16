@@ -14,7 +14,7 @@ alerting:
 rule_files:
   # - "first_rules.yml"
   # - "second_rules.yml"
-  - /etc/prometheus/rules/*.rules
+  - /usr/local/share/prometheus/prometheus_server/rules/*.rules
 
 # A scrape configuration containing exactly one endpoint to scrape:
 # Here it's Prometheus itself.

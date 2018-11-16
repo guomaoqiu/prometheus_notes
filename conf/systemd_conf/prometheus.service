@@ -1,0 +1,15 @@
+[Unit]
+Description=Prometheus Server
+Documentation=https://prometheus.io/docs/introduction/overview/
+After=network.target
+
+[Service]
+User=prometheus
+Restart=on-failure
+WorkingDirectory=/usr/local/share/prometheus/prometheus_server/
+ExecStart=/usr/local/sbin/prometheus \
+          --config.file=/usr/local/share/prometheus/prometheus_server/prometheus.yml \
+          --storage.tsdb.path=/var/lib/prometheus/data
+
+[Install]
+WantedBy=multi-user.target

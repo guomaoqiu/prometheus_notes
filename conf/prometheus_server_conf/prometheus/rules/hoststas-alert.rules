@@ -19,7 +19,7 @@ groups:
       summary: "Instance {{ $labels.instance }} MEM usgae high"
       description: "{{ $labels.instance }} MEM usage above 85% (current value: {{ $value }})"
   - alert: InstanceDown
-    expr: if up == 0
+    expr: up == 0
     for: 1m
     labels:
       severity: 'critical'
