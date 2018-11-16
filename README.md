@@ -115,6 +115,6 @@ Prometheus Server 可以从不同的 exporter 上拉取数据，对于上面的 
 Prometheus Server 提供了简易的 WebUI 可以进数据查询并展示，它默认监听的端口为 9090。接下来我们进行一次简单的查询来验证本文安装配置的系统。
 
 
-关于各项指标的规则还需要通过编写rule条目来实现；这里简单实现了wechat跟email的报警配置，具体可看规则配置文件`conf/prometheus_server_conf/prometheus/rules/hoststas-alert.rules`以及报警触发配置文件`alertmanager_conf/alertmanager.yml`；
+关于各项指标的规则还需要通过编写rule条目来实现；这里简单实现了wechat跟email的报警配置，具体可看规则配置文件`conf/prometheus_server_conf/prometheus/rules/hoststas-alert.rules`以及报警触发配置文件`conf/alertmanager_conf/alertmanager.yml`；
 
 
