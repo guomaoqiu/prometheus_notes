@@ -1920,7 +1920,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "a Node Exporter 0.16+ 监控展示看板 for Prometheus",
+  "title": "Node Exporter for Prometheus",
   "uid": "9CWBz0bik",
   "version": 14
 }
