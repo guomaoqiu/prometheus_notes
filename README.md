@@ -127,7 +127,7 @@ Prometheus Server 提供了简易的 WebUI 可以进数据查询并展示，它�
 ```
 docker run -d -p 3000:3000 grafana/grafana
 ```
-##### 1.访问配置导入node_exporter dashaboard模板
+##### 1.访问、配置、导入node_exporter dashaboard模板
 ```
 # 模板位置: conf/grafana_conf/node_exporter_monitor_templates.json
 ```
